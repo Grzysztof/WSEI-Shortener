@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortener.Web", "Shortener.Web.csproj", "{97487E7E-EC2D-4A8F-AF36-BEB8641C9887}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97487E7E-EC2D-4A8F-AF36-BEB8641C9887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97487E7E-EC2D-4A8F-AF36-BEB8641C9887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97487E7E-EC2D-4A8F-AF36-BEB8641C9887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97487E7E-EC2D-4A8F-AF36-BEB8641C9887}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF6A2C80-9B5D-4017-9E87-8791750F8245}
+	EndGlobalSection
+EndGlobal
