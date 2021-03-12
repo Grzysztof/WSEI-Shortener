@@ -1,0 +1,26 @@
+﻿@model UrlModel
+<section>
+    <header>
+        <h2>Paste address to be shortened</h2>
+    </header>
+    <form method="post">
+        <label asp-for="LongUrl">Your long and boring URL</label>
+        <input asp-for="LongUrl" placeholder="Url" size="50"/>
+        <span class="alert" asp-validation-for="LongUrl"></span>
+        <button type="submit">I want it shorter.</button>
+    </form>
+    @if (Model != null)
+    {
+        string shortUrl = String.Format("{0}://{1}/{2}", Context.Request.Scheme, Context.Request.Host, Model.ShortPath);
+        string deletetUrl = String.Format("{0}://{1}/delete/{2}/{3}", Context.Request.Scheme, Context.Request.Host, Model.deleteToken, Model.ShortPath);
+        <form>
+            <label>Your short Url!</label>
+            <input type="url" value="@shortUrl" size="50"/>
+            <span>
+                What if i want to delete my link?
+            </span>
+            <label>Use this link to delete:</label>
+            <input type="url" value="@deletetUrl" size="50"/>
+        </form>
+    }
+</section>
